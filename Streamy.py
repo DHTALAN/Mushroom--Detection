@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
 @st.cache_data
 def load_data():
-    data = pd.read_csv("D:/M-PROJ-L/mushrooms (1).csv")
+    data = pd.read_csv("Mus_Data.csv")
     label=LabelEncoder()
     for col in data.columns:
         data[col]=label.fit_transform(data[col])
